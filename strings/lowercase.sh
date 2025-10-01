@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function lowercase {
-  echo "$1" | tr \[:upper:\] \[:lower:\] | pbcopy
+  echo "$1" | tr \[:upper:\] \[:lower:\]
 }
 
 lowercase "$#"

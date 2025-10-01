@@ -54,14 +54,14 @@ source 'utils/strings/colors.sh'
   blue "Info"              # Blue text
   ```
 
-- **lowercase.sh** - Convert text to lowercase (copies to clipboard)
+- **lowercase.sh** - Convert text to lowercase
   ```bash
-  lowercase "HELLO"  # Copies "hello" to clipboard
+  lowercase "HELLO"  # "hello"
   ```
 
-- **uppercase.sh** - Convert text to uppercase (copies to clipboard)
+- **uppercase.sh** - Convert text to uppercase
   ```bash
-  uppercase "hello"  # Copies "HELLO" to clipboard
+  uppercase "hello"  # "HELLO"
   ```
 
 - **prefix.sh** - Add prefix to each line in file

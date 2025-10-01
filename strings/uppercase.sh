@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 function uppercase {
-  echo "$1" | tr \[:lower:\] \[:upper:\] | pbcopy
+  echo "$1" | tr \[:lower:\] \[:upper:\]
 }
 
 uppercase "$#"
