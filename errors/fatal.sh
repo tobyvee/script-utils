@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-# shellcheck source=/dev/null
-source "../strings/colors.sh"
-
 fatal() {
-  red FATAL: "$1"
+  echo -e "\e[31m$1\e[0m"
   exit 1
 }

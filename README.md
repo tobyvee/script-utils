@@ -21,59 +21,63 @@ source 'utils/strings/colors.sh'
 ## Available Utilities
 
 ### DateTime
-- **timestamp.sh** - Get current Unix timestamp
-  ```bash
-  timestamp  # Returns: 1640995200
-  ```
+**timestamp.sh** - Get current Unix timestamp
+```bash
+timestamp  # Returns: 1640995200
+```
 
 ### Error Handling
-- **fatal.sh** - Print error message and exit
-  ```bash
-  fatal "Something went wrong"  # Prints red error and exits
-  ```
+**fatal.sh** - Print error message and exit
+```bash
+fatal "Something went wrong"  # Prints red error and exits
+```
 
 ### File System
-- **script_location.sh** - Get directory of current script
-  ```bash
-  get_script_location  # Returns: /path/to/script/directory
-  ```
+**script_location.sh** - Get directory of current script
+```bash
+get_script_location  # Returns: /path/to/script/directory
+```
 
 ### Progress
-- **progress_bar.sh** - Display progress bar
-  ```bash
-  progress_bar 50     # Shows: 50% [████████████░░░░░░░░░░░░░]
-  progress_bar 75 30  # Custom width: 75% [██████████████████████░░░░░░░░]
-  ```
+**progress_bar.sh** - Display progress bar
+```bash
+progress_bar 50     # Shows: 50% [████████████░░░░░░░░░░░░░]
+progress_bar 75 30  # Custom width: 75% [██████████████████████░░░░░░░░]
+```
 
 ### Strings
-- **colors.sh** - Colored text output functions
-  ```bash
-  red "Error message"      # Red text
-  green "Success message"  # Green text
-  yellow "Warning"         # Yellow text
-  blue "Info"              # Blue text
-  ```
+**colors.sh** - Colored text output functions
+```bash
+red "Error message"      # Red text
+green "Success message"  # Green text
+yellow "Warning"         # Yellow text
+blue "Info"              # Blue text
+```
 
-- **lowercase.sh** - Convert text to lowercase
-  ```bash
-  lowercase "HELLO"  # "hello"
-  ```
+**lowercase.sh** - Convert text to lowercase
+```bash
+lowercase "HELLO"  # "hello"
+```
 
-- **uppercase.sh** - Convert text to uppercase
-  ```bash
-  uppercase "hello"  # "HELLO"
-  ```
+**uppercase.sh** - Convert text to uppercase
+```bash
+uppercase "hello"  # "HELLO"
+```
 
-- **prefix.sh** - Add prefix to each line in file
-  ```bash
-  prefix file.txt  # Adds " to start of each line
-  ```
+**prefix.sh** - Add prefix to each line in file
+```bash
+prefix file.txt  # Adds " to start of each line
+```
 
-- **suffix.sh** - Add suffix to each line in file
-  ```bash
-  suffix file.txt  # Adds " to end of each line
-  ```
+**suffix.sh** - Add suffix to each line in file
+```bash
+suffix file.txt  # Adds " to end of each line
+```
 
-## License
+## Tests
 
-See LICENSE.txt for details.
+Tests are written using the [bats testing framework](https://github.com/bats-core/bats-core). To test, run the following command (requires homebrew if bats is not installed):
+
+```bash
+make test
+```
